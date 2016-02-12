@@ -1,0 +1,21 @@
+{
+  "name": "wikitext2markdown",
+  "version": "0.0.1",
+  "description": "wikitext in, markdown out, no html in the middle",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test"
+  },
+  "keywords": [
+    "wikitext",
+    "markdown",
+    "mediawiki",
+    "md"
+  ],
+  "author": "Gregory J. Scheerlinck",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
