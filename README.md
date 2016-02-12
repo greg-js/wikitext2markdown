@@ -1,5 +1,7 @@
 # wikitext2markdown
 
+**Note**: after some more testing I realized there is a huge bug in the output thanks to my reusing of the `*` char. it'll soon be fixed
+
 Converts wikitext into markdown without going through html. I wrote this to get a very lightweight way to get wikitext (mediawiki format) into a modified form of markdown for later display on the command line.
 
 There are still some issues with this but it works passably well for now.
