@@ -7,6 +7,13 @@ var toMD = require('../lib/convert').convert;
 
 describe('toMD', function() {
 
+  it('should convert line breaks', function() {
+    expect(toMD('--------')).to.equal('----');
+    expect(toMD('****')).to.equal('----');
+    expect(toMD('______')).to.equal('----');
+    expect(toMD('_______ foo bar')).to.equal('----');
+  });
+
   it('should convert bold and emphasized text', function() {
     expect(toMD('\'\'\'foo\'\'\'bar')).to.equal('**foo**bar');
     expect(toMD('\'\'foo\'\'bar')).to.equal('*foo*bar');
