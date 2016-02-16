@@ -1,6 +1,6 @@
 # wikitext2markdown
 
-**Note**: after some more testing I realized there is a huge bug in the output thanks to my reusing of the `*` char. it'll soon be fixed
+**Note** I ended up going through html anyway because making this parser turned out to be more complicated than I thought. Right now the regular expressions are picking up just about everything in wikitext, but there are some issues with my replacement strings (too many `*`'s causing problems) and with correctly replacing the template tags. I'm keeping this up to maybe come back to it later on because it _would_ be nice to have this..
 
 Converts wikitext into markdown without going through html. I wrote this to get a very lightweight way to get wikitext (mediawiki format) into a modified form of markdown for later display on the command line.
 
